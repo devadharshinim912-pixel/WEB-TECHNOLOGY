@@ -1,0 +1,218 @@
+
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F7F4E9;
+    color: #30352F;
+}
+
+/* Header */
+
+header {
+    background-color: #344E41;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #D5A441;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+nav a {
+    color: #30352F;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Common Sections */
+
+section {
+    padding: 35px 25px;
+    text-align: center;
+}
+
+section h2 {
+    color: #344E41;
+}
+
+/* Home Section */
+
+#home img {
+    width: 80%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Services */
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #E9E5D5;
+    padding: 25px;
+    margin: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Weather Dashboard */
+
+#weather {
+    background-color: #E9E5D5;
+}
+
+.weather-box {
+    background-color: white;
+    max-width: 750px;
+    margin: 25px auto;
+    padding: 25px;
+    border: 1px solid #344E41;
+    border-radius: 8px;
+}
+
+.location {
+    background-color: #F7F4E9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.location h3 {
+    color: #344E41;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #344E41;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D5A441;
+    color: #30352F;
+}
+
+/* Weather Table */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 14px;
+    text-align: center;
+}
+
+th {
+    background-color: #344E41;
+    color: white;
+}
+
+td {
+    background-color: #F7F4E9;
+}
+
+/* Loading and Error Messages */
+
+#loading {
+    color: #344E41;
+    font-weight: bold;
+}
+
+#errorMessage {
+    color: #B22222;
+    font-weight: bold;
+}
+
+#lastUpdated {
+    color: #666;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* Contact */
+
+#contact {
+    background-color: #F7F4E9;
+}
+
+/* Footer */
+
+footer {
+    background-color: #344E41;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    #home img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+    }
+
+    .weather-box {
+        padding: 12px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}

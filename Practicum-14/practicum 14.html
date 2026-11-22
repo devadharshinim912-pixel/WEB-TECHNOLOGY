@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GreenHarvest Industries</title>
+    <link rel="stylesheet" href="practicum 14.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>GreenHarvest Industries</h1>
+        <p>Growing a Better Tomorrow</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <h2>Welcome to GreenHarvest</h2>
+            <p>
+                Explore quality agricultural products
+                and discover useful farming resources.
+            </p>
+            <button id="exploreButton">Explore Products</button>
+        </div>
+
+        <img src="agrifarm.jpg"
+            alt="Green agricultural field">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About GreenHarvest</h2>
+        <p>
+            GreenHarvest Industries focuses on agriculture
+            and food processing. We provide quality farming
+            products to support farmers and promote
+            sustainable agriculture.
+        </p>
+    </section>
+
+    <!-- Practicum 14: Product Explorer -->
+    <section id="products">
+
+        <h2>Agricultural Products Explorer</h2>
+        <p>Search and filter agricultural products easily.</p>
+
+        <!-- Search and Filter -->
+        <div class="filter-box">
+
+            <input type="text" id="searchInput"
+                placeholder="Search for a product...">
+
+            <select id="categoryFilter">
+                <option value="All">All Categories</option>
+                <option value="Seeds">Seeds</option>
+                <option value="Fertilizers">Fertilizers</option>
+                <option value="Equipment">Equipment</option>
+                <option value="Grains">Grains</option>
+            </select>
+
+            <button id="resetButton">Reset Filters</button>
+
+        </div>
+
+        <p id="resultCount"></p>
+
+        <!-- Product Cards -->
+        <div class="product-container" id="productContainer">
+
+            <div class="product-card" data-id="1" data-category="Seeds">
+                <img src="riceseeds.jpg"
+                    alt="Rice seeds">
+
+                <h3>Rice Seeds</h3>
+                <p>Category: Seeds</p>
+                <p>High-quality seeds for rice cultivation.</p>
+
+                <button class="detailsButton" data-id="1">
+                    View Details
+                </button>
+
+                <div class="product-info"></div>
+            </div>
+
+            <div class="product-card" data-id="2" data-category="Fertilizers">
+                <img src="organicfertilizer.jpg"
+                    alt="Organic fertilizer">
+
+                <h3>Organic Fertilizer</h3>
+                <p>Category: Fertilizers</p>
+                <p>Natural fertilizer for healthy soil.</p>
+
+                <button class="detailsButton" data-id="2">
+                    View Details
+                </button>
+
+                <div class="product-info"></div>
+            </div>
+
+            <div class="product-card" data-id="3" data-category="Equipment">
+                <img src="farmequipment.jpg"
+                    alt="Agricultural equipment">
+
+                <h3>Farm Equipment</h3>
+                <p>Category: Equipment</p>
+                <p>Useful equipment for daily farm activities.</p>
+
+                <button class="detailsButton" data-id="3">
+                    View Details
+                </button>
+
+                <div class="product-info"></div>
+            </div>
+
+            <div class="product-card" data-id="4" data-category="Grains">
+                <img src="wheatgrain.jpg"
+                    alt="Wheat grains">
+
+                <h3>Wheat Grains</h3>
+                <p>Category: Grains</p>
+                <p>Quality wheat grains for food production.</p>
+
+                <button class="detailsButton" data-id="4">
+                    View Details
+                </button>
+
+                <div class="product-info"></div>
+            </div>
+
+            <div class="product-card" data-id="5" data-category="Seeds">
+                <img src="vegeseed.jpg"
+                    alt="Vegetable seeds">
+
+                <h3>Vegetable Seeds</h3>
+                <p>Category: Seeds</p>
+                <p>Seeds suitable for vegetable cultivation.</p>
+
+                <button class="detailsButton" data-id="5">
+                    View Details
+                </button>
+
+                <div class="product-info"></div>
+            </div>
+
+            <div class="product-card" data-id="6" data-category="Fertilizers">
+                <img src="soitnutrient.jpg"
+                    alt="Plant nutrients">
+
+                <h3>Soil Nutrients</h3>
+                <p>Category: Fertilizers</p>
+                <p>Nutrients that help improve soil quality.</p>
+
+                <button class="detailsButton" data-id="6">
+                    View Details
+                </button>
+
+                <div class="product-info"></div>
+            </div>
+
+        </div>
+
+        <p id="noResults">No products found.</p>
+
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-container">
+
+            <details>
+                <summary>What products does GreenHarvest offer?</summary>
+                <p>We offer seeds, fertilizers, grains and farming equipment.</p>
+            </details>
+
+            <details>
+                <summary>Are organic fertilizers available?</summary>
+                <p>Yes, we provide organic fertilizers for agricultural use.</p>
+            </details>
+
+            <details>
+                <summary>How can I choose suitable seeds?</summary>
+                <p>You can explore the product details to learn more about each seed.</p>
+            </details>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: greenharvest@example.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 GreenHarvest Industries. All Rights Reserved.</p>
+    </footer>
+
+    <script src="practicum 14.js"></script>
+
+</body>
+</html>

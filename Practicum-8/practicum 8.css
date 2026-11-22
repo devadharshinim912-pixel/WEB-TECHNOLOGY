@@ -1,0 +1,140 @@
+
+/* Basic styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F7F4E9;
+    color: #30352F;
+}
+
+/* Header */
+header {
+    background-color: #344E41;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation */
+nav {
+    background-color: #D5A441;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #30352F;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 6px;
+}
+
+section h2 {
+    color: #344E41;
+    text-align: center;
+}
+
+/* Home section */
+.home {
+    text-align: center;
+}
+
+.home img {
+    width: 80%;
+    height: 280px;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+/* Cards */
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #E9E5D5;
+    padding: 20px;
+    width: 25%;
+    border-radius: 6px;
+}
+
+.card h3 {
+    color: #344E41;
+}
+
+/* Contact section */
+#contact {
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: #344E41;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* TABLET SCREEN */
+@media (max-width: 900px) {
+
+    .container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .home img {
+        width: 90%;
+    }
+}
+
+/* MOBILE SCREEN */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: auto;
+    }
+
+    .home img {
+        width: 100%;
+        height: 200px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 18px;
+    }
+}

@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GreenHarvest Industries</title>
+    <link rel="stylesheet" href="practicum 13.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>GreenHarvest Industries</h1>
+        <p>Growing a Better Tomorrow</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#taskManager">Task Manager</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to GreenHarvest</h2>
+        <p>
+            Organize your agricultural activities and manage
+            daily farm operations efficiently.
+        </p>
+
+        <img src="agrifarm.jpg"
+            alt="Green agricultural farm">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            GreenHarvest Industries supports farmers through
+            agricultural products, farming services and
+            simple digital solutions.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>Crop Production</h3>
+                <p>Plan and manage crop cultivation activities.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Organic Farming</h3>
+                <p>Encouraging natural and sustainable farming.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Farm Management</h3>
+                <p>Organize everyday agricultural activities.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Practicum 13: Agricultural Task Manager -->
+    <section id="taskManager">
+
+        <h2>Agricultural Task Manager</h2>
+        <p>Plan, organize and track your daily farming activities.</p>
+
+        <div class="task-box">
+
+            <h3>Add Farm Task</h3>
+
+            <form id="taskForm">
+
+                <input type="text" id="taskName"
+                    placeholder="Enter task name" required>
+
+                <select id="taskCategory" required>
+                    <option value="">Select task category</option>
+                    <option value="Crop Production">Crop Production</option>
+                    <option value="Irrigation">Irrigation</option>
+                    <option value="Fertilizing">Fertilizing</option>
+                    <option value="Harvesting">Harvesting</option>
+                    <option value="Maintenance">Maintenance</option>
+                </select>
+
+                <textarea id="taskDescription"
+                    placeholder="Enter task description" required></textarea>
+
+                <input type="date" id="taskDate" required>
+
+                <select id="taskPriority" required>
+                    <option value="">Select priority</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+
+                <select id="taskStatus" required>
+                    <option value="Pending">Pending</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                </select>
+
+                <button type="submit" id="submitButton">Add Task</button>
+
+                <button type="button" id="cancelButton" hidden>
+                    Cancel Edit
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+
+            <!-- Task Summary -->
+            <div class="summary">
+                <p>Total Tasks: <span id="totalTasks">0</span></p>
+                <p>Completed: <span id="completedTasks">0</span></p>
+                <p>Pending: <span id="pendingTasks">0</span></p>
+            </div>
+
+            <!-- Task List -->
+            <h3>Farm Task List</h3>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task Name</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="taskList">
+                    </tbody>
+                </table>
+            </div>
+
+            <p id="emptyMessage">No tasks added yet.</p>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: greenharvest@example.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 GreenHarvest Industries. All Rights Reserved.</p>
+    </footer>
+
+    <script src="practicum 13.js"></script>
+
+</body>
+</html>

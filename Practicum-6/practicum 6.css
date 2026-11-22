@@ -1,0 +1,154 @@
+
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #243746;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Sticky navigation bar */
+nav {
+    background-color: #38566b;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f0c36d;
+}
+
+/* General sections */
+section {
+    padding: 35px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 6px;
+    position: static;
+}
+
+/* Home section */
+.home {
+    text-align: center;
+}
+
+.home img {
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 15px;
+}
+
+/* Relative positioning */
+.about-box {
+    background-color: #e8eef2;
+    padding: 20px;
+    position: relative;
+    left: 10px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Absolute positioning */
+.card {
+    background-color: #e8eef2;
+    padding: 20px;
+    width: 25%;
+    border-radius: 6px;
+    position: relative;
+}
+
+/* Small label inside the first card */
+.card:first-child::after {
+    content: "Featured";
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    background-color: #f0c36d;
+    color: #243746;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* Contact section */
+#contact {
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: #243746;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Fixed positioning */
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d18b35;
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+.contact-button:hover {
+    background-color: #a96820;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 600px) {
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: auto;
+    }
+
+    .home img {
+        width: 100%;
+        height: auto;
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GreenHarvest Industries</title>
+    <link rel="stylesheet" href="practicum 11.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>GreenHarvest Industries</h1>
+        <p>Growing a Better Tomorrow</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#registration">Registration</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to GreenHarvest</h2>
+        <p>Supporting farmers through quality agricultural products
+            and reliable farming solutions.</p>
+
+        <img src="agrifarm.jpg"
+            alt="Agricultural farm">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            GreenHarvest Industries focuses on agriculture and
+            food processing. We support farmers by providing
+            quality products and useful farming services.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Crop Production</h3>
+                <p>Supporting farmers in growing healthy crops.</p>
+            </div>
+
+            <div class="card">
+                <h3>Food Processing</h3>
+                <p>Processing agricultural products safely.</p>
+            </div>
+
+            <div class="card">
+                <h3>Organic Farming</h3>
+                <p>Encouraging natural and sustainable farming.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Farmer Registration Form -->
+    <section id="registration">
+
+        <h2>Farmer Registration Form</h2>
+        <p>Fill in your details to register with GreenHarvest Industries.</p>
+
+        <form id="farmerForm">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="farmerName">Farmer Name:</label>
+                <input type="text" id="farmerName"
+                    placeholder="Enter your full name"
+                    minlength="3" maxlength="30"
+                    pattern="[A-Za-z ]+"
+                    title="Name should contain only letters and spaces"
+                    required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email"
+                    placeholder="example@gmail.com"
+                    required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone"
+                    placeholder="Enter 10 digit mobile number"
+                    pattern="[0-9]{10}"
+                    title="Enter exactly 10 digits"
+                    required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age"
+                    placeholder="Enter your age"
+                    min="18" max="80"
+                    required>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Agricultural Information</legend>
+
+                <label for="farmName">Farm Name:</label>
+                <input type="text" id="farmName"
+                    placeholder="Enter your farm name"
+                    minlength="3" maxlength="40"
+                    required>
+
+                <label for="crop">Type of Crop:</label>
+                <select id="crop" required>
+                    <option value="">Select a crop</option>
+                    <option value="Rice">Rice</option>
+                    <option value="Wheat">Wheat</option>
+                    <option value="Sugarcane">Sugarcane</option>
+                    <option value="Cotton">Cotton</option>
+                    <option value="Vegetables">Vegetables</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="land">Land Area (in acres):</label>
+                <input type="number" id="land"
+                    placeholder="Enter land area"
+                    min="0.5" max="500"
+                    step="0.5"
+                    required>
+
+                <label for="method">Farming Method:</label>
+                <select id="method" required>
+                    <option value="">Select farming method</option>
+                    <option value="Organic">Organic Farming</option>
+                    <option value="Traditional">Traditional Farming</option>
+                    <option value="Modern">Modern Farming</option>
+                    <option value="Mixed">Mixed Farming</option>
+                </select>
+
+                <label for="address">Farm Address:</label>
+                <textarea id="address"
+                    placeholder="Enter your farm address"
+                    minlength="10" maxlength="150"
+                    required></textarea>
+
+            </fieldset>
+
+            <button type="submit">Submit Registration</button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: greenharvest@example.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 GreenHarvest Industries. All Rights Reserved.</p>
+    </footer>
+
+    <script src="practicum 11.js"></script>
+
+</body>
+</html>

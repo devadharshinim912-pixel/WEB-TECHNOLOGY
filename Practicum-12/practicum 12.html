@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GreenHarvest Industries</title>
+    <link rel="stylesheet" href="practicum 12.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>GreenHarvest Industries</h1>
+        <p>Growing a Better Tomorrow</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#weather">Farm Weather</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to GreenHarvest</h2>
+        <p>
+            Supporting farmers with agricultural information
+            and modern farming solutions.
+        </p>
+
+        <img src="agrifarm.jpg"
+            alt="Agricultural field">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            GreenHarvest Industries focuses on agriculture
+            and food processing. We aim to support farmers
+            through quality products and useful information.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>Crop Production</h3>
+                <p>Helping farmers grow healthy crops.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Organic Farming</h3>
+                <p>Encouraging natural farming methods.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Farm Information</h3>
+                <p>Providing useful weather information.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Practicum 12: API Weather Dashboard -->
+    <section id="weather">
+
+        <h2>Agricultural Weather Dashboard</h2>
+
+        <p>
+            Check current weather conditions to understand
+            the environment for farming activities.
+        </p>
+
+        <div class="weather-box">
+
+            <div class="location">
+                <h3>Salem, Tamil Nadu</h3>
+                <p>Live Weather Information</p>
+            </div>
+
+            <button id="loadButton">Get Weather Information</button>
+
+            <!-- Loading Message -->
+            <p id="loading"></p>
+
+            <!-- Error Message -->
+            <p id="errorMessage"></p>
+
+            <!-- Weather Data Table -->
+            <div class="table-container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Weather Details</th>
+                            <th>Current Value</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="weatherData">
+                        <tr>
+                            <td colspan="2">
+                                Click the button to load weather data.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <p id="lastUpdated"></p>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: greenharvest@example.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 GreenHarvest Industries. All Rights Reserved.</p>
+    </footer>
+
+    <script src="practicum 12.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F7F4E9;
+    color: #30352F;
+}
+
+/* Header */
+
+header {
+    background-color: #344E41;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #D5A441;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+nav a {
+    color: #30352F;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Common Sections */
+
+section {
+    padding: 35px 25px;
+    text-align: center;
+}
+
+section h2 {
+    color: #344E41;
+}
+
+/* Home Section */
+
+#home img {
+    width: 80%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Services */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #E9E5D5;
+    padding: 25px;
+    margin: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Registration Form */
+
+#registration {
+    background-color: #E9E5D5;
+}
+
+form {
+    background-color: white;
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 25px;
+    border: 1px solid #344E41;
+    border-radius: 8px;
+    text-align: left;
+}
+
+fieldset {
+    border: 1px solid #9A8F76;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    color: #344E41;
+    font-weight: bold;
+    padding: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Focus Effect */
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #344E41;
+}
+
+/* Valid Input */
+
+input:valid, select:valid, textarea:valid {
+    border-color: #648B55;
+}
+
+/* Invalid Input */
+
+input:invalid, select:invalid, textarea:invalid {
+    border-color: #C65D4B;
+}
+
+/* Text Area */
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Submit Button */
+
+form button {
+    display: block;
+    background-color: #344E41;
+    color: white;
+    padding: 12px 25px;
+    margin: 20px auto 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+form button:hover {
+    background-color: #D5A441;
+    color: #30352F;
+}
+
+/* Form Message */
+
+#formMessage {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Contact */
+
+#contact {
+    background-color: #F7F4E9;
+}
+
+/* Footer */
+
+footer {
+    background-color: #344E41;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    #home img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 12px;
+    }
+}

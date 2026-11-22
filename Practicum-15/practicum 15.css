@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F7F4E9;
+    color: #30352F;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #344E41;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.settings-box {
+    background: white;
+    width: 450px;
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #344E41;
+    margin-bottom: 20px;
+}
+
+.settings-box > p {
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.toggle-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+/* Toggle switch design */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+}
+
+.switch input {
+    appearance: none;
+    width: 60px;
+    height: 32px;
+    background: #aaa;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+/* Circular button */
+.slider {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 4px;
+    top: 4px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.4s;
+    pointer-events: none;
+}
+
+/* When checkbox is checked */
+.switch input:checked {
+    background: #344E41;
+}
+
+.switch input:checked + .slider {
+    transform: translateX(28px);
+}
+
+/* Status display */
+#statusBox {
+    background: #E9E5D5;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+#statusText {
+    margin: 0;
+    font-weight: bold;
+}
+
+#statusBox.active {
+    background: #DDEBDD;
+    color: #344E41;
+}
+
+.description {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+footer {
+    margin-top: 50px;
+    color: #777;
+}
